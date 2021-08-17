@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Sharp">
+</head>
+<body>
+    <div class='menu'>
+        <div class='profile'>
+            <img class='profile-icon' src='img/icon.jpg' alt='Ícone de Perfil'>
+            <span class='profile-name'>Gustavo Kamihara</span>
+            <span class='profile-admin'>Administrador</span>
+        </div>
+        <div class='logout-container'>
+            <div class='logout'>
+                Sair 
+                <span class="material-icons-sharp">
+                    logout
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='content'>
+        <img class='logo' src="img/logo.png" alt="Logo">
+        <table class='users'>
+            <tr>
+                <td class='table-id'>n°</td>
+                <td class='table-icon'>Ícone</td>
+                <td class='table-name'>Nome</td>
+                <td class='table-email'>E-mail</td>
+                <td class='table-phone'>Telefone</td>
+                <td class='table-date'>Criado em</td>
+                <td class='table-admin'>Admin</td>
+                <td class='table-actions'>
+                    <span class="material-icons-sharp add">add</span>
+                </td>
+            </tr>
+            <tr>
+                <td class='table-icon'>1</td>
+                <td class='table-icon'><img src='img/icon.jpg' alt='Ícone'></td>
+                <td class='table-name'>Gustavo Kamihara</td>
+                <td class='table-email'>teste.teste@gmail.com</td>
+                <td class='table-phone'>11 999991234</td>
+                <td class='table-date'>23/06/2021 11:16</td>
+                <td class='table-admin'>Sim</td>
+                <td class='table-actions'>
+                    <span class="material-icons-sharp edit-btn">edit</span>
+                    <span class="material-icons-sharp delete-btn">delete</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='form form-add'>
+        <form class='register'>
+            <div class='form-container'>
+                <span class="material-icons-sharp close">close</span>
+                <span class=form-title>Cadastrar</span>
+                <input type='text' required class='form-name' name='name' placeholder="Nome">
+                <input type='text' required class='form-email' name='email' placeholder="E-mail">
+                <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
+                <input type='password' required class='form-senha' name='password' placeholder="Senha">
+                <div>
+                    <label>
+                    <input type='checkbox' class='form-admin' name='admin'>
+                    Administrador</label>
+                </div>
+                <input type='file' class='form-icon'>
+                <span class="material-icons-sharp check">done</span>
+            </div>
+        </form>
+    </div>
+    <div class='form form-edit'>
+        <form class='edit'>
+            <div class='form-container'>
+                <span class="material-icons-sharp close">close</span>
+                <span class=form-title>Editar</span>
+                <input type='hidden' class='form-id' name='id'>
+                <input type='text' required class='form-name' name='name' placeholder="Nome">
+                <input type='text' required class='form-email' name='email' placeholder="E-mail">
+                <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
+                <div>
+                    <label>
+                    <input type='checkbox' class='form-admin' name='admin'>
+                    Administrador</label>
+                </div>
+                <input type='file' class='form-icon'>
+                <span class="material-icons-sharp check">done</span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

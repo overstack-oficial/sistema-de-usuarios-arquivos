@@ -1,0 +1,164 @@
+body{
+    margin:0;
+    font-family: Nunito, sans-serif;
+}
+
+div.menu{
+    box-shadow: 1px 0px 2px 0px black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    font-size: 18px;
+}
+
+div.menu div.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+div.menu div.profile img.profile-icon{
+    width: 60%;
+    border: 1.5px solid black;
+}
+
+div.menu div.profile span.profile-name{
+    margin-top: 2%;
+    text-align: center;
+}
+
+div.menu div.profile span.profile-admin{
+    margin-top: 1%;
+    text-align: center;
+}
+
+div.menu div.logout-container{
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    display: flex;
+}
+
+div.menu div.logout-container div.logout{
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.content {
+    display: flex;
+    width: calc(85% - 50px);
+    margin-left: 15%;
+    padding: 50px 0 0 50px;
+}
+
+div.content img.logo {
+    width: 60px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+table.users {
+    border-collapse: collapse;
+}
+
+table.users tr {
+    border: 1px solid black;
+}
+
+table.users td{
+    width: fit-content;
+    padding: 0 10px;
+    text-align: center;
+}
+
+table.users span.delete-btn {
+    color: red;
+}
+
+table.users tr:not(:first-child):hover{
+    background-color:#e2e2e2;
+}
+
+td.table-actions span {
+    cursor: pointer;
+}
+
+td.table-icon img {
+    width: 50px;
+    margin-top: 3px;
+}
+
+div.form {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.form-container {
+    position: relative;
+    background-color: white;
+    padding: 25px;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+div.form-container>* {
+    margin: 5px 0;
+}
+
+div.form-container>input {
+    width: 260px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+div.form-container input:focus {
+    outline: 0;
+}
+
+div.form-container>input[type='text'], div.form-container>input[type='password'] {
+    height: 25px;
+    font-size: 18px;
+}
+
+span.form-title {
+    font-size: 30px;
+}
+
+div.form-container span.check {
+    font-size: 30px;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+div.form-container span.close {
+    font-size: 30px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+}
+
+div.form-container input.form-icon{
+    border:0
+}

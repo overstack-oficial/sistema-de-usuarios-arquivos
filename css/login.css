@@ -1,0 +1,51 @@
+:root{
+    --overstack: #8257e6;
+    --overstack-light-hover: #bf00b5;
+    --color-gradient: linear-gradient(155.34deg,var(--overstack) 30.41%,var(--overstack-light-hover) 100%);
+}
+
+div.content{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Nunito, sans-serif;
+}
+
+img.logo{
+    width: 150px;
+}
+
+form.login input {
+    width: 350px;
+    height: 35px;
+    border: 0;
+    margin: 10px 0;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+}
+
+form.login input:focus {
+    outline: 0;
+}
+
+form.login {
+    width: 100%;
+}
+
+button.login-btn {
+    width: 80px;
+    height: 35px;
+    background: var(--color-gradient);
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;;
+    color: white;
+}
+
+button.login-btn:hover{
+    filter:brightness(0.9)
+}
